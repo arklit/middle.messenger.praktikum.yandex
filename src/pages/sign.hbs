@@ -1,0 +1,107 @@
+{{!< desktop}}
+
+<div class="login">
+  <div class="login__container">
+    <h2 class="login__title">Регистрации</h2>
+    <form class="login__form">
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Почта</p>
+          <input
+            class="login__input"
+            type="email"
+            name="email"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="1"
+            placeholder="user@gmail.com"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Логин</p>
+          <input
+            class="login__input"
+            type="text"
+            name="login"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="2"
+            placeholder="user"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Имя</p>
+          <input
+            class="login__input"
+            type="text"
+            name="first_name"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="3"
+            placeholder="Иван"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Фамилия</p>
+          <input
+            class="login__input"
+            type="text"
+            name="second_name"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="4"
+            placeholder="Иванов"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Пароль</p>
+          <input
+            class="login__input"
+            type="password"
+            name="password"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="5"
+            placeholder="*********"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p>Пароль еще раз</p>
+          <input
+            class="login__input"
+            type="password"
+            name="password_check"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="6"
+            placeholder="*********"
+          />
+        </label>
+        <span class="input_error error">Пароль не совпадает</span>
+      </div>
+        {{> button name='Регистрация'}}
+      <a href="./login.hbs" class="login__link" tabindex="8">Войти</a>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+---
+button: "Войти"
+---
+
+{{!< desktop}}
+
+<div class="login">
+  <div class="login__container">
+    <h2 class="login__title">Вход</h2>
+    <form class="login__form">
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p >Логин</p>
+          <input
+            class="login__input"
+            type="text"
+            name="login"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            placeholder="user"
+            tabindex="1"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+      <div class="login__box">
+        <label for="login" class="login__label">
+          <p >Пароль</p>
+          <input
+            class="login__input"
+            type="password"
+            name="password"
+            required="true"
+            maxlength="20"
+            minlength="4"
+            tabindex="2"
+            placeholder="******"
+          />
+        </label>
+        <span class="input_error error">ошибка</span>
+      </div>
+        {{> button name='Войти'}}
+
+      <a href="./sign.hbs" class="login__link" tabindex="4">Нет аккаунта?</a>
+    </form>
+  </div>
+</div>

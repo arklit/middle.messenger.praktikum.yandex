@@ -1,0 +1,129 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 60px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  &-avatar {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .profile__layout {
+        display: flex;
+      }
+    }
+  }
+  &__layout {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: none;
+  }
+  &-avatar__avatar {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+  }
+  &-avatar__input {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-avatar__btn {
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .profile-avatar__input input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  &__name {
+    font-size: var(--size-normal);
+    margin-top: 21px;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 60px;
+    
+
+    &__item {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #EAEAEA;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      
+      &:last-of-type {
+        border: none;
+      }
+    }
+  }
+  &_pass {
+    display: none;
+  }
+  &_hidden {
+    display: none;
+  }
+  &_pass_show {
+    display: flex;
+  }
+  &__input {
+    color: var(--color-gray);
+    text-align: end;
+  }
+  &-info__button {
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 13px;
+    background: transparent;
+    color: var(--color-main);
+    &:hover, &:focus {
+      color: var(--color-active);
+    }
+    &_red {
+      color: var(--color-error);
+    }
+  }
+
+}

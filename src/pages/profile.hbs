@@ -1,0 +1,67 @@
+{{!< desktop}}
+
+<div class="profile">
+  {{> back}}
+  <form class="profile__form">
+    <div class="profile-avatar">
+      <img src="../assets/img/icons/avatar.svg" alt="avatar" class="profile-avatar__avatar">
+      <div class="profile__layout">
+	      <label class="profile-avatar__input">
+	   	     <input type="file" name="avatar">
+ 	   	     <span class="profile-avatar__btn">Поменять <br>аватар</span>           
+ 	      </label>
+      </div>
+    </div>
+    <span class="profile__name">Иван</span>
+    <div class="profile-info">
+      <div class="profile-info__item profile_name">
+        <span>Почта</span>
+        <input type="email" readonly="true" minlength="2" maxlength="30" class="profile__input" value="pochta@mail.ru" name="email">
+      </div>
+      <div class="profile-info__item profile_name">
+        <span>Логин</span>
+        <input type="text" readonly="true" minlength="2" maxlength="30" class="profile__input" value="god" name="login">
+      </div>
+      <div class="profile-info__item profile_name">
+        <span>Имя</span>
+        <input type="text" readonly="true" minlength="2" maxlength="30" class="profile__input" value="Иван" name="first_name">
+      </div>
+      <div class="profile-info__item profile_name">
+        <span>Фамилия</span>
+        <input type="text" readonly="true" minlength="2" maxlength="30" class="profile__input" value="Иванов" name="second_name">
+      </div>
+      <div class="profile-info__item profile_name">
+        <span>Имя в чате</span>
+        <input type="text" readonly="true" minlength="2" maxlength="30" class="profile__input" value="god" name="display_name">
+      </div>
+      <div class="profile-info__item profile_name">
+        <span>Телефон</span>
+        <input type="text" readonly="true" minlength="2" maxlength="30" class="profile__input" value="88128880000" name="phone">
+      </div>
+      <div class="profile-info__item profile_pass">
+        <span>Пароль</span>
+        <input type="password" readonly="true" minlength="2" maxlength="30" class="profile__input" value="88128880000" name="oldPassword">
+      </div>
+      <div class="profile-info__item profile_pass">
+        <span>Новый пароль</span>
+        <input type="password" readonly="true" minlength="2" maxlength="30" class="profile__input" value="88128880000" name="newPassword">
+      </div>
+      <div class="profile-info__item profile_pass">
+        <span>Новый пароль</span>
+        <input type="password" readonly="true" minlength="2" maxlength="30" class="profile__input" value="88128880000" name="newPassword">
+      </div>
+    </div>
+    {{> button name="Сохранить" class="profile_pass"}}
+    <div class="profile-info">
+      <div class="profile-info__item">
+        <button class="profile-info__button">Изменить информацию</button>
+      </div>
+      <div class="profile-info__item">
+        <button type="button" class="profile-info__button profile-info__button_edit_pass">Изменить пароль</button>
+      </div>
+      <div class="profile-info__item">
+        <button type="button" class="profile-info__button profile-info__button_red">Выйти</button>
+      </div>
+    </div>
+  </form>
+</div>
