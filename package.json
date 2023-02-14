@@ -2,10 +2,9 @@
   "name": "middle.messenger",
   "version": "1.0.0",
   "description": "---",
-  "main": "index.js",
-  "engine": "16.13.1",
   "scripts": {
     "start": "parcel src/pages/index.hbs --port 3000 --no-cache",
+    "build": "parcel build src/pages/index.hbs --no-cache",
     "serve": "node src/js/server.js"
   },
   "repository": {
