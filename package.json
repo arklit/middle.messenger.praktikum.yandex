@@ -6,7 +6,7 @@
   "engine": "16.13.1",
   "scripts": {
     "start": "parcel src/pages/index.hbs --port 3000 --no-cache",
-    "build": "parcel build src/pages/index.hbs && node src/js/server.js"
+    "serve": "node src/js/server.js"
   },
   "repository": {
     "type": "git",

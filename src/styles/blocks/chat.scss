@@ -1,0 +1,112 @@
+.chat {
+  display: flex;
+  height: 100%;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFBFB;
+    width: 30%;
+    padding: 10px;
+    height: 100%;
+    gap: 14px;
+  }
+  &__search {
+    background: #EFEFEF;
+    border-radius: 5px;
+    padding: 10px;
+
+    &::placeholder {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+      color: #999999;
+      
+    }
+  }
+  &__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-main);
+    }
+    &__avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  &-user {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    border-top: 1px solid #EAEAEA;
+    padding: 12px 0;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    &__name {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 13px;
+      color: var(--color-black);
+    }
+    &__message {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #999999;
+    }
+    &__avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &__time {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      font-weight: 500;
+      font-size: 9px;
+      line-height: 13px;
+      color: #999999;
+    }
+    &__count {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      background: var(--color-main);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 12px;
+      color: #FFFFFF;
+    }
+  }
+  &__users {
+    display: flex;
+    flex-direction: column;
+  }
+}

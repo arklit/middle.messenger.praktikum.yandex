@@ -10,11 +10,11 @@ btnPass.addEventListener('click', () => {
   })
   passInputs.forEach((item) => {
     item.classList.add('profile_pass_show')
-    let input = item.querySelector('input')
-    input.removeAttribute('readonly', "true")
-    input.removeAttribute('value')
+    // let input = item.querySelector('input')
+    // input.removeAttribute('readonly')
+    // input.removeAttribute('value')
   })
-  profileInfo.forEach(item => item.setAttribute('style', "display: none"))
+  profileInfo[1].setAttribute('style', 'display: none')
 
 })
 console.log('123')
