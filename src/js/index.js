@@ -4,17 +4,18 @@ const profileInputs = document.querySelectorAll('.profile_name');
 const profileInfo = document.querySelectorAll('.profile-info');
 const saveBtn = document.querySelector('.btn')
 
-btnPass.addEventListener('click', () => {
-  profileInputs.forEach((item) => {
-    item.classList.add('profile_hidden')
+if(btnPass) {
+  btnPass.addEventListener('click', () => {
+    profileInputs.forEach((item) => {
+      item.classList.add('profile_hidden')
+    })
+    passInputs.forEach((item) => {
+      item.classList.add('profile_pass_show')
+      // let input = item.querySelector('input')
+      // input.removeAttribute('readonly')
+      // input.removeAttribute('value')
+    })
+    profileInfo[1].setAttribute('style', 'display: none')
+  
   })
-  passInputs.forEach((item) => {
-    item.classList.add('profile_pass_show')
-    // let input = item.querySelector('input')
-    // input.removeAttribute('readonly')
-    // input.removeAttribute('value')
-  })
-  profileInfo[1].setAttribute('style', 'display: none')
-
-})
-console.log('123')
+}
